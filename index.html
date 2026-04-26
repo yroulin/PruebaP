@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo Simple</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header>
+        <h1>Mis tareas</h1>
+        <p>Minimalista · colores primarios</p>
+      </header>
+
+      <form id="todo-form" class="todo-form" autocomplete="off">
+        <label for="todo-input" class="sr-only">Nueva tarea</label>
+        <input id="todo-input" type="text" placeholder="Escribe una tarea..." maxlength="120" required />
+        <button type="submit">Añadir</button>
+      </form>
+
+      <ul id="todo-list" class="todo-list" aria-live="polite"></ul>
+      <p id="empty-state" class="empty-state">No hay tareas aún.</p>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
